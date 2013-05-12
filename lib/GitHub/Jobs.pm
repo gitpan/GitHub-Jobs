@@ -10,7 +10,7 @@ GitHub::Jobs - interface to the GitHub Jobs API.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
@@ -29,7 +29,7 @@ use HTTP::Request;
 use LWP::UserAgent;
 
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 Readonly my $BASE_URL    => "http://jobs.github.com/positions.json";
 
@@ -119,12 +119,15 @@ Please report any bugs or feature requests to C<bug-github-jobs at rt.cpan.org>,
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=GitHub-Jobs>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
+or https://github.com/ovntatar/GitHub-Jobs/issues
 
 =head1 SUPPORT
 
 You can find documentation for this module with the perldoc command.
 
     perldoc GitHub::Jobs
+   
+    https://github.com/ovntatar/GitHub-Jobs
 
 
 You can also look for information at:
@@ -149,8 +152,6 @@ L<http://search.cpan.org/dist/GitHub-Jobs/>
 
 =back
 
-
-=head1 ACKNOWLEDGEMENTS
 
 
 =head1 LICENSE AND COPYRIGHT

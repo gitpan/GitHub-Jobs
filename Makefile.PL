@@ -6,7 +6,14 @@ WriteMakefile
   'NAME' => 'GitHub::Jobs',
   'VERSION_FROM' => 'lib/GitHub/Jobs.pm',
   'PREREQ_PM' => {
-                   'Test::More' => 0
+                   'HTTP::Request' => '6',
+                   'JSON' => '2.57',
+                   'LWP::UserAgent' => '6.05',
+                   'Moose' => '2.0802',
+                   'Moose::Util::TypeConstraints' => '2.0802',
+                   'MooseX::Params::Validate' => '0.18',
+                   'Test::More' => 0,
+                   'namespace::clean' => '0.24'
                  },
   'INSTALLDIRS' => 'site',
   'EXE_FILES' => [],
