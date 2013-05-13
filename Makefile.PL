@@ -3,20 +3,21 @@ require 5.006;
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
+  'PL_FILES' => {},
+  'INSTALLDIRS' => 'site',
   'NAME' => 'GitHub::Jobs',
+  'EXE_FILES' => [],
   'VERSION_FROM' => 'lib/GitHub/Jobs.pm',
   'PREREQ_PM' => {
-                   'HTTP::Request' => '6',
-                   'JSON' => '2.57',
-                   'LWP::UserAgent' => '6.05',
-                   'Moose' => '2.0802',
                    'Moose::Util::TypeConstraints' => '2.0802',
-                   'MooseX::Params::Validate' => '0.18',
+                   'Readonly' => '1.03',
+                   'namespace::clean' => '0.24',
                    'Test::More' => 0,
-                   'namespace::clean' => '0.24'
-                 },
-  'INSTALLDIRS' => 'site',
-  'EXE_FILES' => [],
-  'PL_FILES' => {}
+                   'LWP::UserAgent' => '6.05',
+                   'MooseX::Params::Validate' => '0.18',
+                   'JSON' => '2.57',
+                   'HTTP::Request' => '6',
+                   'Moose' => '2.0802'
+                 }
 )
 ;
